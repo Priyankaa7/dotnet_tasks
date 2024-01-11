@@ -1,0 +1,14 @@
+C:\Users\hp\Desktop\tasks\employe\bin\Debug\net8.0\employe.exe
+C:\Users\hp\Desktop\tasks\employe\bin\Debug\net8.0\employe.deps.json
+C:\Users\hp\Desktop\tasks\employe\bin\Debug\net8.0\employe.runtimeconfig.json
+C:\Users\hp\Desktop\tasks\employe\bin\Debug\net8.0\employe.dll
+C:\Users\hp\Desktop\tasks\employe\bin\Debug\net8.0\employe.pdb
+C:\Users\hp\Desktop\tasks\employe\obj\Debug\net8.0\employe.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\Desktop\tasks\employe\obj\Debug\net8.0\employe.AssemblyInfoInputs.cache
+C:\Users\hp\Desktop\tasks\employe\obj\Debug\net8.0\employe.AssemblyInfo.cs
+C:\Users\hp\Desktop\tasks\employe\obj\Debug\net8.0\employe.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\tasks\employe\obj\Debug\net8.0\employe.dll
+C:\Users\hp\Desktop\tasks\employe\obj\Debug\net8.0\refint\employe.dll
+C:\Users\hp\Desktop\tasks\employe\obj\Debug\net8.0\employe.pdb
+C:\Users\hp\Desktop\tasks\employe\obj\Debug\net8.0\employe.genruntimeconfig.cache
+C:\Users\hp\Desktop\tasks\employe\obj\Debug\net8.0\ref\employe.dll
