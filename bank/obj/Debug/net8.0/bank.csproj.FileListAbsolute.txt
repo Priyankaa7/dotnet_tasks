@@ -1,0 +1,15 @@
+C:\Users\hp\Desktop\tasks\bank\obj\Debug\net8.0\bank.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\Desktop\tasks\bank\obj\Debug\net8.0\bank.AssemblyInfoInputs.cache
+C:\Users\hp\Desktop\tasks\bank\obj\Debug\net8.0\bank.AssemblyInfo.cs
+C:\Users\hp\Desktop\tasks\bank\obj\Debug\net8.0\bank.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\tasks\bank\obj\Debug\net8.0\bank.sourcelink.json
+C:\Users\hp\Desktop\tasks\bank\bin\Debug\net8.0\bank.exe
+C:\Users\hp\Desktop\tasks\bank\bin\Debug\net8.0\bank.deps.json
+C:\Users\hp\Desktop\tasks\bank\bin\Debug\net8.0\bank.runtimeconfig.json
+C:\Users\hp\Desktop\tasks\bank\bin\Debug\net8.0\bank.dll
+C:\Users\hp\Desktop\tasks\bank\bin\Debug\net8.0\bank.pdb
+C:\Users\hp\Desktop\tasks\bank\obj\Debug\net8.0\bank.dll
+C:\Users\hp\Desktop\tasks\bank\obj\Debug\net8.0\refint\bank.dll
+C:\Users\hp\Desktop\tasks\bank\obj\Debug\net8.0\bank.pdb
+C:\Users\hp\Desktop\tasks\bank\obj\Debug\net8.0\bank.genruntimeconfig.cache
+C:\Users\hp\Desktop\tasks\bank\obj\Debug\net8.0\ref\bank.dll
