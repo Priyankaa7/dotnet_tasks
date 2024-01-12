@@ -63,10 +63,10 @@ class Program
                     
                     case 3:
                         Console.Write("Enter Account Number: ");
-                        int accNumberDetails = int.Parse(Console.ReadLine());
+                        int accNum = int.Parse(Console.ReadLine());
                         try
                         {
-                            Console.WriteLine(bankRepo.GetAccountDetails(accNumberDetails).ToString());
+                            Console.WriteLine(bankRepo.GetAccountDetails(accNum).ToString());
                         }
                         catch (InvalidOperationException ex)
                         {
@@ -76,14 +76,14 @@ class Program
 
                     case 4:
                         Console.Write("Enter Account Number: ");
-                        int accNumberDeposit = int.Parse(Console.ReadLine());
+                        int accNumDepo = int.Parse(Console.ReadLine());
 
                         Console.Write("Enter Amount to Deposit: ");
-                        decimal amountToDeposit = decimal.Parse(Console.ReadLine());
+                        decimal depoAmt = decimal.Parse(Console.ReadLine());
 
                         try
                         {
-                            bankRepo.DepositAmount(accNumberDeposit, amountToDeposit);
+                            bankRepo.DepositAmount(accNumDepo, depoAmt);
                             Console.WriteLine("Amount deposited successfully.");
                         }
                         catch (InvalidOperationException ex)
@@ -94,14 +94,14 @@ class Program
 
                     case 5:
                         Console.Write("Enter Account Number: ");
-                        int accNumberWithdraw = int.Parse(Console.ReadLine());
+                        int accNumWithdraw = int.Parse(Console.ReadLine());
 
                         Console.Write("Enter Amount to Withdraw: ");
-                        decimal amountToWithdraw = decimal.Parse(Console.ReadLine());
+                        decimal withdrawAmt = decimal.Parse(Console.ReadLine());
 
                         try
                         {
-                            bankRepo.WithdrawAmount(accNumberWithdraw, amountToWithdraw);
+                            bankRepo.WithdrawAmount(accNumWithdraw, withdrawAmt);
                             Console.WriteLine("Amount withdrawn successfully.");
                         }
                         catch (InvalidOperationException ex)
@@ -112,8 +112,8 @@ class Program
 
                     case 6:
                         Console.Write("Enter Account Number: ");
-                        int accNumberTransactions = int.Parse(Console.ReadLine());
-                        var transactions = bankRepo.GetTransactions(accNumberTransactions);
+                        int accNumTrans = int.Parse(Console.ReadLine());
+                        var transactions = bankRepo.GetTransactions(accNumTrans);
                         Console.WriteLine("\nTransactions:");
                         foreach (var transaction in transactions)
                         {
