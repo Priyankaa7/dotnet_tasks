@@ -39,7 +39,7 @@ namespace bankRepo
             var account = accounts.Find(a => a.AccountNumber == accno);
             if (account == null)
             {
-                System.Console.WriteLine("Account not found!");
+                throw new InvalidOperationException("Account not found");
             }
             return account;
         }
@@ -63,24 +63,22 @@ namespace bankRepo
         public void WithdrawAmount(int accno, decimal amt)
         {
             var account = GetAccountDetails(accno);
-
             if (account.CurrentBalance < amt)
             {
-                System.Console.WriteLine("Balance not sufficient!");
+                throw new InvalidOperationException("Insufficient balance");
             }
-
             account.CurrentBalance -= amt;
-
             var transaction = new SBTransaction
             {
                 TransactionId = transactions.Count + 1,
                 TransactionDate = DateTime.Now,
                 AccountNumber = accno,
                 Amount = amt,
-                TransactionType = "Withdrawal"
+                TransactionType = "Withdraw"
             };
             transactions.Add(transaction);
         }
+
 
         public List<SBTransaction> GetTransactions(int accno)
         {

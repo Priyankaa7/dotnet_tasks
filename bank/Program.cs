@@ -2,82 +2,6 @@
 using sbtransaction;
 using bankRepo;
 
-/*public class BankRepository : IBankRepository
-{
-    private List<SBAccount> accounts;
-    private List<SBTransaction> transactions;
-
-    public BankRepository()
-    {
-        accounts = new List<SBAccount>();
-        transactions = new List<SBTransaction>();
-    }
-
-    public void NewAccount(SBAccount acc)
-    {
-        accounts.Add(acc);
-    }
-
-    public List<SBAccount> GetAllAccounts()
-    {
-        return accounts;
-    }
-
-    public SBAccount GetAccountDetails(int accno)
-    {
-        var account = accounts.Find(a => a.AccountNumber == accno);
-        if (account == null)
-        {
-            throw new InvalidOperationException("Account not found");
-        }
-        return account;
-    }
-
-    public void DepositAmount(int accno, decimal amt)
-    {
-        var account = GetAccountDetails(accno);
-        account.CurrentBalance += amt;
-
-        var transaction = new SBTransaction
-        {
-            TransactionId = transactions.Count + 1,
-            TransactionDate = DateTime.Now,
-            AccountNumber = accno,
-            Amount = amt,
-            TransactionType = "Deposit"
-        };
-
-        transactions.Add(transaction);
-    }
-
-    public void WithdrawAmount(int accno, decimal amt)
-    {
-        var account = GetAccountDetails(accno);
-        if (account.CurrentBalance < amt)
-        {
-            throw new InvalidOperationException("Insufficient balance");
-        }
-
-        account.CurrentBalance -= amt;
-
-        var transaction = new SBTransaction
-        {
-            TransactionId = transactions.Count + 1,
-            TransactionDate = DateTime.Now,
-            AccountNumber = accno,
-            Amount = amt,
-            TransactionType = "Withdraw"
-        };
-
-        transactions.Add(transaction);
-    }
-
-    public List<SBTransaction> GetTransactions(int accno)
-    {
-        return transactions.FindAll(t => t.AccountNumber == accno);
-    }
-}*/
-
 class Program
 {
     public static void Main()
@@ -136,32 +60,54 @@ class Program
                             Console.WriteLine(acc.ToString());
                         }
                         break;
-
+                    
                     case 3:
                         Console.Write("Enter Account Number: ");
                         int accNumberDetails = int.Parse(Console.ReadLine());
-                        
-                        Console.WriteLine(bankRepo.GetAccountDetails(accNumberDetails).ToString());
+                        try
+                        {
+                            Console.WriteLine(bankRepo.GetAccountDetails(accNumberDetails).ToString());
+                        }
+                        catch (InvalidOperationException ex)
+                        {
+                            Console.WriteLine(ex.Message);
+                        }
                         break;
 
                     case 4:
                         Console.Write("Enter Account Number: ");
                         int accNumberDeposit = int.Parse(Console.ReadLine());
+
                         Console.Write("Enter Amount to Deposit: ");
                         decimal amountToDeposit = decimal.Parse(Console.ReadLine());
-                        
-                        bankRepo.DepositAmount(accNumberDeposit, amountToDeposit);
-                        Console.WriteLine("Amount deposited successfully.");
+
+                        try
+                        {
+                            bankRepo.DepositAmount(accNumberDeposit, amountToDeposit);
+                            Console.WriteLine("Amount deposited successfully.");
+                        }
+                        catch (InvalidOperationException ex)
+                        {
+                            Console.WriteLine(ex.Message);
+                        }
                         break;
 
                     case 5:
                         Console.Write("Enter Account Number: ");
                         int accNumberWithdraw = int.Parse(Console.ReadLine());
+
                         Console.Write("Enter Amount to Withdraw: ");
                         decimal amountToWithdraw = decimal.Parse(Console.ReadLine());
-                        
-                        bankRepo.WithdrawAmount(accNumberWithdraw, amountToWithdraw);
-                        Console.WriteLine("Amount withdrawn successfully.");
+
+                        try
+                        {
+                            bankRepo.WithdrawAmount(accNumberWithdraw, amountToWithdraw);
+                            Console.WriteLine("Amount withdrawn successfully.");
+                        }
+                        catch (InvalidOperationException ex)
+                        {
+                            Console.WriteLine(ex.Message);
+                        }
                         break;
 
                     case 6:
