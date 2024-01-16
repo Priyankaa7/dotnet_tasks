@@ -1,9 +1,11 @@
 ﻿using sbaccount;
 using sbtransaction;
 using bankRepo;
+using bank.Models;
 
 class Program
 {
+    private static Ace52024Context db = new Ace52024Context();
     public static void Main()
     {
         IBankRepository bankRepo = new BankRepository();
@@ -29,36 +31,11 @@ class Program
                         return;
 
                     case 1:
-                        Console.Write("Enter Account Number: ");
-                        int accNumber = int.Parse(Console.ReadLine());
-
-                        Console.Write("Enter Customer Name: ");
-                        string custName = Console.ReadLine();
-
-                        Console.Write("Enter Customer Address: ");
-                        string custAddress = Console.ReadLine();
-
-                        Console.Write("Enter Current Balance: ");
-                        decimal currBalance = decimal.Parse(Console.ReadLine());
-
-                        SBAccount newAccount = new SBAccount
-                        {
-                            AccountNumber = accNumber,
-                            CustomerName = custName,
-                            CustomerAddress = custAddress,
-                            CurrentBalance = currBalance,
-                        };
-
-                        bankRepo.NewAccount(newAccount);
-                        Console.WriteLine("Account created successfully.");
+                        AddAccount();
                         break;
 
                     case 2:
-                        Console.WriteLine("\nAll Accounts:");
-                        foreach (var acc in bankRepo.GetAllAccounts())
-                        {
-                            Console.WriteLine(acc.ToString());
-                        }
+                        SelectData();
                         break;
                     
                     case 3:
@@ -132,4 +109,31 @@ class Program
             }
         }
     }
+
+    public static void AddAccount()
+    {
+        PriyankaSbaccount s = new PriyankaSbaccount();
+        Console.Write("Enter Account Number: ");
+        s.AccountNumber = int.Parse(Console.ReadLine());
+        Console.Write("Enter Customer Name: ");
+        s.CustomerName = Console.ReadLine();
+        Console.Write("Enter Customer Address: ");
+        s.CustomerAddress = Console.ReadLine();
+        Console.Write("Enter Current Balance: ");
+        s.CurrentBalance = decimal.Parse(Console.ReadLine());
+        
+        db.PriyankaSbaccounts.Add(s);
+        db.SaveChanges();
+        Console.WriteLine("Account created successfully.");
+    } 
+    public static void SelectData()
+    {
+        Console.WriteLine("\nAll Accounts:");
+        foreach (var item in db.PriyankaSbaccounts)
+        {
+            //System.Console.WriteLine(item.ToString());
+            System.Console.WriteLine(item.AccountNumber+" "+item.CustomerName+" "+item.CustomerAddress+" "+item.CurrentBalance);
+        }
+    }
+
 }

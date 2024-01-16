@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hp\\Desktop\\tasks\\bank\\bank.csproj": {}
+    "C:\\Users\\P.A.wa22\\Desktop\\tasks\\dotnet_tasks\\bank\\bank.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hp\\Desktop\\tasks\\bank\\bank.csproj": {
+    "C:\\Users\\P.A.wa22\\Desktop\\tasks\\dotnet_tasks\\bank\\bank.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hp\\Desktop\\tasks\\bank\\bank.csproj",
+        "projectUniqueName": "C:\\Users\\P.A.wa22\\Desktop\\tasks\\dotnet_tasks\\bank\\bank.csproj",
         "projectName": "bank",
-        "projectPath": "C:\\Users\\hp\\Desktop\\tasks\\bank\\bank.csproj",
-        "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hp\\Desktop\\tasks\\bank\\obj\\",
+        "projectPath": "C:\\Users\\P.A.wa22\\Desktop\\tasks\\dotnet_tasks\\bank\\bank.csproj",
+        "packagesPath": "C:\\Users\\P.A.wa22\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\P.A.wa22\\Desktop\\tasks\\dotnet_tasks\\bank\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\P.A.wa22\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -39,6 +37,22 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -55,7 +69,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
