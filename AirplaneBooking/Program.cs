@@ -32,7 +32,7 @@ internal class Program
 
         app.MapControllerRoute(
             name: "default",
-            pattern: "{controller=Home}/{action=Index}/{id?}");
+            pattern: "{controller=Flight}/{action=ShowFlights}/{id?}");
 
         app.Run();
     }

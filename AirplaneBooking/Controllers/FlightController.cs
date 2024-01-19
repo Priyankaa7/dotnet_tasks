@@ -12,10 +12,41 @@ namespace AirplaneBooking.Controllers
         {
             db = _db;
         }
-
-        public ActionResult ShowFlights()
+        public IActionResult ShowFlights()
         {
             return View(db.PriyankaFlights);
+        }
+
+        [HttpGet]
+        public ActionResult BookFlight()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult BookFlight(PriyankaFlight f)
+        {
+            db.PriyankaFlights.Add(f);
+            db.SaveChanges();
+            return RedirectToAction("ShowFlights");
+        }
+
+        public ActionResult Details(int id)
+        {
+            PriyankaFlight f = db.PriyankaFlights.Where(x => x.FlightId == id).FirstOrDefault();
+            return View(f);
+        }
+
+        public ActionResult Edit(int id)
+        {
+            PriyankaFlight f = db.PriyankaFlights.Where(x => x.FlightId == id).FirstOrDefault();
+            return View(f);            
+        }
+        [HttpPost]
+        public ActionResult Edit(PriyankaFlight f)
+        {
+            db.PriyankaFlights.Update(f);
+            db.SaveChanges();
+            return RedirectToAction("ShowFlights");
         }
     }
 }
