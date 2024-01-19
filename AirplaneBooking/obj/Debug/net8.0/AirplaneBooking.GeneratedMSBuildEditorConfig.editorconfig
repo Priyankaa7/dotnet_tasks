@@ -26,8 +26,20 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\P.A.wa22\Desktop\tasks\dotnet_tasks\AirplaneBooking
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/P.A.wa22/Desktop/tasks/dotnet_tasks/AirplaneBooking/Views/Client/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50XExvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/P.A.wa22/Desktop/tasks/dotnet_tasks/AirplaneBooking/Views/Client/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50XFJlZ2lzdGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/P.A.wa22/Desktop/tasks/dotnet_tasks/AirplaneBooking/Views/Flight/BookFlight.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmxpZ2h0XEJvb2tGbGlnaHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/P.A.wa22/Desktop/tasks/dotnet_tasks/AirplaneBooking/Views/Flight/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmxpZ2h0XERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/P.A.wa22/Desktop/tasks/dotnet_tasks/AirplaneBooking/Views/Flight/Details.cshtml]

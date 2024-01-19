@@ -48,5 +48,20 @@ namespace AirplaneBooking.Controllers
             db.SaveChanges();
             return RedirectToAction("ShowFlights");
         }
+
+        public ActionResult Delete(int id)
+        {
+            PriyankaFlight f = db.PriyankaFlights.Where(x => x.FlightId == id).FirstOrDefault();
+            return View(f);
+        }
+        [HttpPost]
+        [ActionName("Delete")]
+        public ActionResult DeleteConfirmed(int id)
+        {
+            PriyankaFlight f = db.PriyankaFlights.Where(x => x.FlightId == id).FirstOrDefault();
+            db.PriyankaFlights.Remove(f);
+            db.SaveChanges();
+            return RedirectToAction("ShowFlights");
+        }
     }
 }
