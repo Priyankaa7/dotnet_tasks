@@ -12,6 +12,7 @@ public class BookingController : Controller
     }
     public IActionResult ShowBookings()
     {
+        ViewBag.username = HttpContext.Session.GetString("uname");
         return View(db.PriyankaBookings);
     }
 

@@ -12,6 +12,7 @@ public class FlightController : Controller
     }
     public IActionResult ShowFlights()
     {
+        ViewBag.Name = HttpContext.Session.GetString("uname");
         return View(db.PriyankaFlights);
     }
 

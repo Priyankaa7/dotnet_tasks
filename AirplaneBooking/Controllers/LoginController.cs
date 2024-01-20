@@ -24,7 +24,7 @@ public class LoginController : Controller
     {
         db.UserTables.Add(user);
         db.SaveChanges();
-        return View();
+        return View("Login");
     }
 
     [HttpGet]
@@ -42,7 +42,7 @@ public class LoginController : Controller
         if (result != null)
         {
             HttpContext.Session.SetString("uname", result.Name.ToString());
-            return RedirectToAction("ShowFlights", "Flight");
+            return RedirectToAction("Index", "Home");
         }
         else 
         {

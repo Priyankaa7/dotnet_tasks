@@ -12,6 +12,7 @@ public class CustomerController : Controller
     }
     public IActionResult ShowCustomers()
     {
+        ViewBag.uName = HttpContext.Session.GetString("uname");
         return View(db.PriyankaCustomers);
     }
 

@@ -7,11 +7,16 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome @ViewBag.Data!</h1>
-    <!--<p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>-->
-    <div>
-        <a asp-controller="Flight" asp-action="ShowFlights">Flight Details</a>
-        <!--<a asp-controller="Customer" asp-action="ShowCustomers">Cusotmer Details</a>
-        <a asp-controller="Booking" asp-action="ShowBookings">Booking details</a>-->
-    </div>
+    <h1 class="items-center justify-center text-center display-4 top-6">Welcome @ViewBag.Data!</h1>
+    <!--<p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <div class="flex items-center justify-center">
+        <div class="text-center">
+            <br><br>
+            <a asp-controller="Flight" asp-action="ShowFlights">Flight Details</a>
+            <br><br>
+            <a asp-controller="Customer" asp-action="ShowCustomers">Customer Details</a>
+            <br><br>
+            <a asp-controller="Booking" asp-action="ShowBookings">Booking Details</a>
+        </div>
+    </div>-->
 </div>
