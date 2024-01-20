@@ -26,6 +26,66 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\P.A.wa22\Desktop\tasks\dotnet_tasks\AirplaneBooking
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/P.A.wa22/Desktop/tasks/dotnet_tasks/AirplaneBooking/Views/Booking/AddBooking.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1xBZGRCb29raW5nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/P.A.wa22/Desktop/tasks/dotnet_tasks/AirplaneBooking/Views/Booking/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/P.A.wa22/Desktop/tasks/dotnet_tasks/AirplaneBooking/Views/Booking/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/P.A.wa22/Desktop/tasks/dotnet_tasks/AirplaneBooking/Views/Booking/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/P.A.wa22/Desktop/tasks/dotnet_tasks/AirplaneBooking/Views/Booking/ShowBookings.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1xTaG93Qm9va2luZ3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/P.A.wa22/Desktop/tasks/dotnet_tasks/AirplaneBooking/Views/Customer/AddCustomer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcQWRkQ3VzdG9tZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/P.A.wa22/Desktop/tasks/dotnet_tasks/AirplaneBooking/Views/Customer/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/P.A.wa22/Desktop/tasks/dotnet_tasks/AirplaneBooking/Views/Customer/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/P.A.wa22/Desktop/tasks/dotnet_tasks/AirplaneBooking/Views/Customer/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/P.A.wa22/Desktop/tasks/dotnet_tasks/AirplaneBooking/Views/Customer/ShowCustomers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcU2hvd0N1c3RvbWVycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/P.A.wa22/Desktop/tasks/dotnet_tasks/AirplaneBooking/Views/Flight/AddFlight.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmxpZ2h0XEFkZEZsaWdodC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/P.A.wa22/Desktop/tasks/dotnet_tasks/AirplaneBooking/Views/Flight/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmxpZ2h0XERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/P.A.wa22/Desktop/tasks/dotnet_tasks/AirplaneBooking/Views/Flight/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmxpZ2h0XERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/P.A.wa22/Desktop/tasks/dotnet_tasks/AirplaneBooking/Views/Flight/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmxpZ2h0XEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/P.A.wa22/Desktop/tasks/dotnet_tasks/AirplaneBooking/Views/Flight/ShowFlights.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmxpZ2h0XFNob3dGbGlnaHRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/P.A.wa22/Desktop/tasks/dotnet_tasks/AirplaneBooking/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -44,6 +104,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/P.A.wa22/Desktop/tasks/dotnet_tasks/AirplaneBooking/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/P.A.wa22/Desktop/tasks/dotnet_tasks/AirplaneBooking/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/P.A.wa22/Desktop/tasks/dotnet_tasks/AirplaneBooking/Views/Shared/_ValidationScriptsPartial.cshtml]

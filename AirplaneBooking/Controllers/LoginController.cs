@@ -6,10 +6,12 @@ namespace AirplaneBooking.Controllers;
 public class LoginController : Controller
 {
     private readonly Ace52024Context db;
+    private readonly ISession session;
 
-    public LoginController(Ace52024Context _db)
+    public LoginController(Ace52024Context _db, IHttpContextAccessor httpContextAccessor)
     {
         db = _db;
+        session = httpContextAccessor.HttpContext.Session;
     }
 
     [HttpGet]
@@ -25,6 +27,7 @@ public class LoginController : Controller
         return View();
     }
 
+    [HttpGet]
     public IActionResult Login()
     {
         return View();
@@ -32,18 +35,24 @@ public class LoginController : Controller
     [HttpPost]
     public IActionResult Login(UserTable u)
     {
-            var result = (from i in db.UserTables
-                            where i.Email==u.Email && i.Password==u.Password
-                            select i).SingleOrDefault();
+        var result = (from i in db.UserTables
+                        where i.Email==u.Email && i.Password==u.Password
+                        select i).SingleOrDefault();
 
-            if (result != null)
-            {
-                //HttpContext.Session.SetString("uname", result.Username);
-                return RedirectToAction("Register");
-            }
-            else 
-            {
-                return View();
-            }        
+        if (result != null)
+        {
+            HttpContext.Session.SetString("uname", result.Name.ToString());
+            return RedirectToAction("ShowFlights", "Flight");
+        }
+        else 
+        {
+            return View();
+        }
+    }
+
+    public IActionResult Logout()
+    {
+        HttpContext.Session.Clear();
+        return RedirectToAction("Login");
     }
 }

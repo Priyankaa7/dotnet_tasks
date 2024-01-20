@@ -1,0 +1,56 @@
+@model AirplaneBooking.Models.PriyankaBooking
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <!--<h4>PriyankaBooking</h4>-->
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.BookingId)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.BookingId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FlightId)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FlightId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CustomerId)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CustomerId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.BookingDate)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.BookingDate)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NoOfPassengers)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NoOfPassengers)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TotalCost)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TotalCost)
+        </dd>
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.BookingId }) |
+    @Html.ActionLink("Delete", "Delete", new { id = Model.BookingId })
+    <br><br>
+    <a asp-action="ShowBookings">Back to List</a>
+</div>
