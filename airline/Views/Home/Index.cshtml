@@ -1,0 +1,17 @@
+﻿@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="items-center justify-center text-center display-4 top-6">Welcome to ABC Airlines!</h1>
+    <br><br>
+    <span class="btn btn-primary m-2">
+        <a style="color: white; text-decoration: none" asp-controller="Flight" asp-action="ShowFlights">Check available fligts</a> 
+    </span>
+    <span class="btn btn-primary m-2">
+        <a style="color: white; text-decoration: none" asp-controller="Customer"  asp-action="ShowCustomers">Customer Info</a> 
+    </span>
+</div>
